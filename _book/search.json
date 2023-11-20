@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "I am going to learn a lot: TRUEFALSE\nWhat is the name of the main character in ‘Mansfield Park’?\n\n Elizabeth Mary Fanny Catherine\n\nWho is the author of Mansfield Park?\n\n Jane Austen Charlotte Bronte Emily Bronte Agatha Christie\n\nWhere is the main setting of Mansfield Park?\n\n London Bath Manchester Mansfield Park\n\nWho is Fanny Price’s wealthy uncle in Mansfield Park?\n\n Sir Thomas Bertram Mr. Price Mr. Crawford Mr. Rushworth\n\nWho is Fanny Price’s love interest in Mansfield Park?\n\n Edmund Bertram Tom Bertram Henry Crawford William Price\n\n\nfunction getCorrect(){ \n  let rawCorrect = document.getElementsByClassName(\"webex-total_correct\")[0].innerHTML;\n  let [correct,,total,] = rawCorrect.split(' ')\n  alert(`${correct},${total}`)\n}\n\nsetTimeout(() =&gt; {document.getElementsByClassName(\"webex-check-button\")[0].addEventListener(\"mouseup\",(event) =&gt; {console.log(event);\ngetCorrect()\n});}, 1000);"
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "2  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Quizzes with Webexercises and Quarto BAnderson",
+    "section": "",
+    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "Webexercisetest.html#r-markdown",
+    "href": "Webexercisetest.html#r-markdown",
+    "title": "2  Webexercisetest",
+    "section": "2.1 R Markdown",
+    "text": "2.1 R Markdown\nThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.\nWhen you click the Knit button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:\n\nsummary(cars)\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00"
+  },
+  {
+    "objectID": "Webexercisetest.html#including-plots",
+    "href": "Webexercisetest.html#including-plots",
+    "title": "2  Webexercisetest",
+    "section": "2.2 Including Plots",
+    "text": "2.2 Including Plots\n```{?fig-airquality further explores the impact of temperature on ozone level.}\n#| label: fig-airquality #| fig-cap: “Temperature and ozone level.” #| warning: false\nlibrary(ggplot2)\nggplot(airquality, aes(Temp, Ozone)) + geom_point() + geom_smooth(method = “loess”)\n\nYou can also embed plots, for example:\n\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](Webexercisetest_files/figure-html/pressure-1.png){width=672}\n:::\n:::\n\n\n\nNote that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.\n\n\n\n\n:::{#quarto-navigation-envelope .hidden}\n[Quizzes with Webexercises and Quarto BAnderson]{.hidden render-id=\"quarto-int-sidebar-title\"}\n[Quizzes with Webexercises and Quarto BAnderson]{.hidden render-id=\"quarto-int-navbar-title\"}\n[&lt;span class='chapter-number'&gt;3&lt;/span&gt;  &lt;span class='chapter-title'&gt;Summary&lt;/span&gt;]{.hidden render-id=\"quarto-int-next\"}\n[&lt;span class='chapter-number'&gt;1&lt;/span&gt;  &lt;span class='chapter-title'&gt;Introduction&lt;/span&gt;]{.hidden render-id=\"quarto-int-prev\"}\n[Preface]{.hidden render-id=\"quarto-int-sidebar:/index.html\"}\n[&lt;span class='chapter-number'&gt;1&lt;/span&gt;  &lt;span class='chapter-title'&gt;Introduction&lt;/span&gt;]{.hidden render-id=\"quarto-int-sidebar:/intro.html\"}\n[&lt;span class='chapter-number'&gt;2&lt;/span&gt;  &lt;span class='chapter-title'&gt;Webexercisetest&lt;/span&gt;]{.hidden render-id=\"quarto-int-sidebar:/Webexercisetest.html\"}\n[&lt;span class='chapter-number'&gt;3&lt;/span&gt;  &lt;span class='chapter-title'&gt;Summary&lt;/span&gt;]{.hidden render-id=\"quarto-int-sidebar:/summary.html\"}\n[References]{.hidden render-id=\"quarto-int-sidebar:/references.html\"}\n[&lt;span class='chapter-number'&gt;2&lt;/span&gt;  &lt;span class='chapter-title'&gt;Webexercisetest&lt;/span&gt;]{.hidden render-id=\"quarto-breadcrumbs-14b7ab6c67f2ded96bb2b1b0107781e8\"}\n:::\n\n\n\n:::{#quarto-meta-markdown .hidden}\n[Quizzes with Webexercises and Quarto BAnderson - [2]{.chapter-number}  [Webexercisetest]{.chapter-title}]{.hidden render-id=\"quarto-metatitle\"}\n[Quizzes with Webexercises and Quarto BAnderson - [2]{.chapter-number}  [Webexercisetest]{.chapter-title}]{.hidden render-id=\"quarto-twittercardtitle\"}\n[Quizzes with Webexercises and Quarto BAnderson - [2]{.chapter-number}  [Webexercisetest]{.chapter-title}]{.hidden render-id=\"quarto-ogcardtitle\"}\n[Quizzes with Webexercises and Quarto BAnderson]{.hidden render-id=\"quarto-metasitename\"}\n[]{.hidden render-id=\"quarto-twittercarddesc\"}\n[]{.hidden render-id=\"quarto-ogcardddesc\"}\n:::\n\n\n\n\n&lt;!-- --&gt;\n\n::: {.quarto-embedded-source-code}\n```````````````````{.markdown shortcodes=\"false\"}\n---\ntitle: \"Webexercisetest\"\nauthor: \"Mohsin\"\ndate: \"2023-11-20\"\noutput: html_document\n---\n\n```{r setup, include=FALSE}\nknitr::opts_chunk$set(echo = TRUE)"
+  },
+  {
+    "objectID": "Webexercisetest.html#r-markdown-1",
+    "href": "Webexercisetest.html#r-markdown-1",
+    "title": "2  Webexercisetest",
+    "section": "2.3 R Markdown",
+    "text": "2.3 R Markdown\nThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.\nWhen you click the Knit button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:\nsummary(cars)"
+  },
+  {
+    "objectID": "Webexercisetest.html#including-plots-1",
+    "href": "Webexercisetest.html#including-plots-1",
+    "title": "2  Webexercisetest",
+    "section": "2.4 Including Plots",
+    "text": "2.4 Including Plots\n```{?fig-airquality further explores the impact of temperature on ozone level.}\n#| label: fig-airquality #| fig-cap: “Temperature and ozone level.” #| warning: false\nlibrary(ggplot2)\nggplot(airquality, aes(Temp, Ozone)) + geom_point() + geom_smooth(method = “loess”)\n\nYou can also embed plots, for example:\n\n```{r pressure, echo=FALSE}\nplot(pressure)\nNote that the echo = FALSE parameter was added to the code chunk to prevent printing of the R code that generated the plot. ``````````````````` :::"
+  }
+]

@@ -1,0 +1,44 @@
+# Introduction
+
+This is a book created from markdown and executable code.
+
+```{r}
+library(webexercises)
+add_to_quarto(
+  quarto_dir = ".",
+  include_dir = "include",
+  output_format = c("html")
+)
+```
+
+See @knuth84 for additional discussion of literate programming.
+
+```{r .webex-check .webex-box}
+#| echo: false
+#| results: asis
+
+# Define the questions
+q1 <- "What is the name of the main character in 'Mansfield Park'?"
+q2 <- "Who is the author of Mansfield Park?"
+q3 <- "Where is the main setting of Mansfield Park?"
+q4 <- "Who is Fanny Price's wealthy uncle in Mansfield Park?"
+q5 <- "Who is Fanny Price's love interest in Mansfield Park?"
+
+# Define the answer choices
+q1_choices <- c("Elizabeth", "Mary", answer= "Fanny", "Catherine")
+
+q2_choices <- c( answer= "Jane Austen", "Charlotte Bronte", "Emily Bronte", "Agatha Christie")
+
+q3_choices <- c("London", "Bath", "Manchester",  answer= "Mansfield Park")
+
+q4_choices <- c( answer= "Sir Thomas Bertram", "Mr. Price", "Mr. Crawford", "Mr. Rushworth")
+
+q5_choices <- c( answer= "Edmund Bertram", "Tom Bertram", "Henry Crawford", "William Price")
+
+cat(q1,longmcq(q1_choices))
+cat(q2,longmcq(q2_choices))
+cat(q3,longmcq(q3_choices))
+cat(q4,longmcq(q4_choices))
+cat(q5,longmcq(q5_choices))
+
+```

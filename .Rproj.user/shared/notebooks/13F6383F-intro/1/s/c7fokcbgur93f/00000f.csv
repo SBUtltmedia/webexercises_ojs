@@ -1,0 +1,10 @@
+"0","library(webexercises)"
+"0","add_to_quarto("
+"0","  quarto_dir = ""."","
+"0","  include_dir = ""include"","
+"0","  output_format = c(""html"")"
+"0",")"
+"2","webex.css, webex.js, and webexercises.qmd updated
+"
+"2","./_quarto.yml updated
+"
